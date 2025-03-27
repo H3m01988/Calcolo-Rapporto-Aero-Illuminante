@@ -1,0 +1,1 @@
+# Calcolo-Rapporto-Aero-Illuminante
