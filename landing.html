@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolo Rapporto Aero Illuminante</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Calcolo Rapporto Aero Illuminante</h1>
+        
+        <div class="form-section">
+            <h2>Aggiungi Stanza</h2>
+            <div class="form-group">
+                <label for="room-name">Nome Stanza:</label>
+                <input type="text" id="room-name" placeholder="Es. Camera da letto">
+            </div>
+            <div class="form-group">
+                <label for="room-area">Superficie (m²):</label>
+                <input type="number" id="room-area" min="0" step="0.01" placeholder="Es. 15.5">
+            </div>
+            <button id="add-room">Aggiungi Stanza</button>
+        </div>
+
+        <div class="form-section" id="window-section" style="display: none;">
+            <h2>Aggiungi Finestra</h2>
+            <div class="form-group">
+                <label for="window-room">Stanza:</label>
+                <select id="window-room"></select>
+            </div>
+            <div class="form-group">
+                <label for="window-height">Altezza (m):</label>
+                <input type="number" id="window-height" min="0" step="0.01" placeholder="Es. 1.2">
+            </div>
+            <div class="form-group">
+                <label for="window-width">Larghezza (m):</label>
+                <input type="number" id="window-width" min="0" step="0.01" placeholder="Es. 0.8">
+            </div>
+            <div class="form-group">
+                <label for="window-type">Tipo di apertura:</label>
+                <select id="window-type">
+                    <option value="transparent">Trasparente (Aerante e Illuminante)</option>
+                    <option value="opaque">Opaca (Solo Aerante)</option>
+                </select>
+            </div>
+            <button id="add-window">Aggiungi Finestra</button>
+        </div>
+
+        <div class="results-section">
+            <h2>Stanze e Finestre</h2>
+            <div id="rooms-list"></div>
+            
+            <button id="calculate-ratio" style="display: none;">Calcola Rapporto</button>
+            
+            <div id="results-table" style="display: none;">
+                <div class="export-container" style="text-align: right; margin-bottom: 10px;">
+                    <button id="export-results" style="display: none;">Esporta Risultati</button>
+                </div>
+                <h2>Risultati</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Stanza</th>
+                            <th>Superficie (m²)</th>
+                            <th>Superficie Aerante (m²)</th>
+                            <th>Superficie Illuminante (m²)</th>
+                            <th>Rapporto Aerante</th>
+                            <th>Rapporto Illuminante</th>
+                            <th>Verifica</th>
+                        </tr>
+                    </thead>
+                    <tbody id="results-body"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

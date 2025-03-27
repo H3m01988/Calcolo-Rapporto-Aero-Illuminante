@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolo Rapporto Aero Illuminante - Strumento Professionale</title>
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Calcolo Rapporto Aero Illuminante</h1>
+            <p class="tagline">Strumento professionale per il calcolo e la verifica dei requisiti di aerazione e illuminazione</p>
+            <a href="landing.html" class="cta-button">Inizia Subito</a>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="container">
+            <h2>Funzionalità Principali</h2>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Gestione Stanze</h3>
+                    <p>Aggiungi facilmente le stanze del tuo progetto specificando nome e superficie in metri quadrati.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-window-maximize"></i>
+                    </div>
+                    <h3>Configurazione Finestre</h3>
+                    <p>Inserisci le dimensioni e il tipo di apertura delle finestre per ogni stanza con un'interfaccia intuitiva.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Calcolo Automatico</h3>
+                    <p>Ottieni istantaneamente il calcolo del rapporto aero-illuminante per verificare la conformità normativa.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-export"></i>
+                    </div>
+                    <h3>Esportazione Risultati</h3>
+                    <p>Esporta facilmente i risultati in formato immagine per includerli nella tua documentazione tecnica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="demo">
+        <div class="container">
+            <h2>Come Funziona</h2>
+            <div class="demo-content">
+                <div class="demo-text">
+                    <ol class="steps">
+                        <li><strong>Aggiungi le stanze</strong> del tuo progetto</li>
+                        <li><strong>Inserisci le finestre</strong> per ogni stanza</li>
+                        <li><strong>Calcola il rapporto</strong> con un solo click</li>
+                        <li><strong>Verifica la conformità</strong> ai requisiti normativi</li>
+                        <li><strong>Esporta i risultati</strong> per la tua documentazione</li>
+                    </ol>
+                </div>
+                <div class="demo-image">
+                    <img id="demo-img" src="finestra-tramonto.jpeg" alt="Finestra con vista tramonto - Rapporto aero-illuminante">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <h2>Vantaggi</h2>
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Risparmio di tempo nel calcolo dei rapporti aero-illuminanti</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Verifica immediata della conformità normativa</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Interfaccia intuitiva e facile da usare</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Documentazione professionale dei risultati</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Supporto per finestre trasparenti e opache</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Pronto a semplificare i tuoi calcoli?</h2>
+            <p>Inizia subito a utilizzare il nostro strumento professionale per il calcolo del rapporto aero-illuminante</p>
+            <a href="landing.html" class="cta-button">Accedi all'Applicazione</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Calcolo Rapporto Aero Illuminante. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Animazione semplice per gli elementi al caricamento della pagina
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.feature-card, .benefit-item, .steps li');
+            
+            elements.forEach((element, index) => {
+                setTimeout(() => {
+                    element.classList.add('visible');
+                }, 100 * index);
+            });
+
+            // Nessuna gestione di caricamento immagine necessaria
+        });
+    </script>
+</body>
+</html>
